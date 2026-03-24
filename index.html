@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyam Tiwari — Data Analyst & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="cursor-outer"></div>
+<div id="cursor-inner"></div>
+<div id="page-progress"></div>
+
+<div id="loader">
+  <div class="loader-box">
+    <div class="lb-name"><span class="lb-p">P</span><span class="lb-t">T</span></div>
+    <div class="lb-track"><div class="lb-fill" id="lbFill"></div></div>
+    <div class="lb-label">Loading<span class="lb-dots">...</span></div>
+  </div>
+</div>
+
+<header id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">Priyam<span class="brand-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nl">Home</a></li>
+      <li><a href="#about" class="nl">About</a></li>
+      <li><a href="#skills" class="nl">Skills</a></li>
+      <li><a href="#projects" class="nl">Work</a></li>
+      <li><a href="#experience" class="nl">Journey</a></li>
+      <li><a href="#certificates" class="nl">Certs</a></li>
+      <li><a href="#achievements" class="nl">Wins</a></li>
+      <li><a href="#contact" class="nl">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="avail-badge"><span class="ab-dot"></span>Available</span>
+      <a href="PriyamCVFinal2.pdf" class="nav-resume" download>Resume</a>
+      <button class="ham-btn" id="hamBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-drawer" id="mobDrawer">
+  <button class="drawer-close" id="drawerClose">✕</button>
+  <div class="drawer-brand">Priyam<span>.</span></div>
+  <nav class="drawer-nav">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+    <a href="#projects">Work</a><a href="#experience">Journey</a>
+    <a href="#certificates">Certificates</a><a href="#achievements">Wins</a><a href="#contact">Contact</a>
+  </nav>
+  <a href="PriyamCVFinal2.pdf" class="drawer-resume" download>Download Resume ↓</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-vert-left">DATA · ANALYST · DEVELOPER · 2025</div>
+  <div class="hero-vert-right">PYTHON · POWER BI · C++ · DSA · DJANGO</div>
+  <div class="hero-wrap">
+    <div class="hero-left">
+      <div class="hero-tag fade-up" data-delay="0"><span class="ht-dot"></span><span>Available for Internships</span><span class="ht-sep">·</span><span>India</span></div>
+      <h1 class="hero-name">
+        <span class="hn-line fade-up" data-delay="80">Hi, I'm</span>
+        <span class="hn-line hn-big fade-up" data-delay="180">Priyam</span>
+        <span class="hn-line hn-stroke fade-up" data-delay="280">Tiwari</span>
+      </h1>
+      <div class="hero-role fade-up" data-delay="360"><span class="role-prefix">&lt;</span><span id="typedRole"></span><span class="role-cursor">_</span><span class="role-suffix">/&gt;</span></div>
+      <p class="hero-bio fade-up" data-delay="440">Python for analytics · C++ for algorithms · Power BI for storytelling. Turning raw numbers into clear, impactful stories — one dataset at a time.</p>
+      <div class="hero-actions fade-up" data-delay="520">
+        <a href="#projects" class="btn-primary">See My Work <span class="btn-arrow">↗</span></a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+        <a href="PriyamCVFinal2.pdf" class="btn-ghost" download>Resume ↓</a>
+      </div>
+      <div class="hero-socials fade-up" data-delay="600">
+        <a href="https://github.com/1priyam" target="_blank" rel="noopener noreferrer" class="soc-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+        <a href="https://www.linkedin.com/in/priyam-tiwari-0ab62b28a/" target="_blank" rel="noopener noreferrer" class="soc-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+        <a href="mailto:tpriyam60@gmail.com" class="soc-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</a>
+      </div>
+    </div>
+    <div class="hero-right fade-up" data-delay="300">
+      <div class="pc-wrap-anim">
+      <div class="photo-card">
+        <div class="pc-corner pc-tl"></div><div class="pc-corner pc-tr"></div>
+        <div class="pc-corner pc-bl"></div><div class="pc-corner pc-br"></div>
+        <div class="pc-img-wrap"><img src="IMG_20260323_150204_Bokeh.jpg.jpeg" alt="Priyam Tiwari" onerror="this.parentElement.innerHTML='<div class=\'pc-placeholder\'>PT</div>'"/></div>
+        <!-- <div class="pc-chip chip-a"><span class="chip-num" data-to="10">0</span><span>+ Projects</span></div>
+        <div class="pc-chip chip-b"><span class="chip-num" data-to="200">0</span><span>+ LeetCode</span></div> -->
+        <div class="pc-info">
+          <div class="pci-name">Priyam Tiwari</div>
+          <div class="pci-role">Data Analyst · Python Dev · C++ DSA</div>
+          <div class="pci-badge"><span class="pci-dot"></span>Open to work</div>
+        </div>
+      </div>
+      </div>
+      <!-- <div class="float-tag ft-1">🐍 Python</div>
+      <div class="float-tag ft-2">📊 Power BI</div>
+      <div class="float-tag ft-3">⚡ C++ DSA</div> -->
+    </div>
+  </div>
+  <div class="hero-stats-band fade-up" data-delay="680">
+    <div class="hsb-item"><span class="hsb-n" data-to="10">0</span><span class="hsb-suf">+</span><span class="hsb-l">Projects Shipped</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><span class="hsb-n" data-to="200">0</span><span class="hsb-suf">+</span><span class="hsb-l">LeetCode Solved</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><span class="hsb-n" data-to="6">0</span><span class="hsb-l">Certifications</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><span class="hsb-n">50</span><span class="hsb-suf">h+</span><span class="hsb-l">Volunteer Hours</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><span class="hsb-n">2</span><span class="hsb-suf">yr</span><span class="hsb-l">Coding Experience</span></div>
+  </div>
+  <div class="scroll-hint"><div class="sh-track"><div class="sh-ball"></div></div><span>Scroll to explore</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="about-decor">
+    <div class="ad-circ" data-speed="0.05"></div>
+    <div class="ad-big-num" data-speed="0.08">01</div>
+    <div class="ad-cross c1" data-speed="0.15">+</div>
+    <div class="ad-cross c2" data-speed="0.1">+</div>
+    <div class="ad-dots" data-speed="0.05"></div>
+  </div>
+  <div class="section-inner">
+    <div class="section-label">01 — About Me</div>
+    <div class="about-layout">
+      <div class="about-left">
+        <h2 class="section-title reveal">Who <em>am I?</em></h2>
+        <div class="about-imgs">
+          <div class="ai-main reveal"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=85&fit=crop&crop=center" alt="Coding"/><div class="ai-label">// my workspace</div></div>
+          <div class="ai-sm reveal" data-delay="80"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=85&fit=crop" alt="Data viz"/><div class="ai-label">// data viz</div></div>
+        </div>
+      </div>
+      <div class="about-right reveal" data-delay="100">
+        <p class="about-lead">Hey — I'm <strong>Priyam.</strong> A CSE third-year who got completely absorbed into data analytics, Python development and C++ problem solving.</p>
+        <p>It started with basic scripts and C++ fundamentals, spiralled into data visualizations and algorithms, and now I'm building full projects end-to-end.</p>
+        <p>My stack is Python, Power BI, Django and C++. I've cracked 200+ LeetCode problems, shipped 10+ real projects, and done NGO community work I'm genuinely proud of.</p>
+        <div class="about-details">
+          <div class="ad-item"><span class="ad-key">Location</span><span class="ad-val">India 📍</span></div>
+          <div class="ad-item"><span class="ad-key">Degree</span><span class="ad-val">B.Tech CSE — 3rd Year</span></div>
+          <div class="ad-item"><span class="ad-key">Status</span><span class="ad-val">Seeking Internship 💼</span></div>
+          <div class="ad-item"><span class="ad-key">Focus</span><span class="ad-val">Data Analytics + Full-Stack + DSA</span></div>
+          <div class="ad-item"><span class="ad-key">Languages</span><span class="ad-val">Python, C++, SQL, HTML/CSS, JS</span></div>
+        </div>
+        <div class="about-btns">
+          <a href="#projects" class="btn-primary">View My Work <span class="btn-arrow">↗</span></a>
+          <a href="#contact" class="btn-outline">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS — BENTO with C++/DSA + new proficiency design -->
+<section id="skills" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">02 — Tech Stack</div>
+    <div class="skills-intro">
+      <div class="skills-intro-text">
+        <h2 class="section-title reveal" style="margin-bottom:.6rem">My <em>Skills</em></h2>
+        <p class="reveal" data-delay="60">Python for analytics, C++ for algorithms, Power BI for storytelling, and Django for shipping products people actually use.</p>
+      </div>
+      <div class="skills-xp-strip reveal" data-delay="100">
+        <div class="xp-pill"><strong>10+</strong><span>Projects built</span></div>
+        <div class="xp-pill"><strong>200+</strong><span>Problems solved</span></div>
+        <div class="xp-pill"><strong>2 yrs</strong><span>Hands-on</span></div>
+        <div class="xp-pill"><strong><span class="xp-num" data-to="7.2" data-float="true">0.0</span></strong><span>CGPA</span></div>
+      </div>
+    </div>
+
+    <div class="skills-bento">
+      <!-- Python & Data — wide -->
+      <div class="sb-cell sb-cell-python sb-cell-glow sb-c1 reveal" data-delay="0">
+        <div class="sb-cell-head"><div class="sb-icon gold">PY</div><div><h4>Data &amp; Analysis</h4><p>Cleaning, exploration, storytelling</p></div></div>
+        <div class="chip-row">
+          <span class="schip g">Python</span><span class="schip t">Pandas</span><span class="schip g">NumPy</span><span class="schip n">SQL</span><span class="schip n">Jupyter</span><span class="schip t">Matplotlib</span><span class="schip g">Seaborn</span><span class="schip p">SciPy</span>
+        </div>
+      </div>
+      <!-- Radar -->
+      <div class="sb-cell sb-c2 reveal" data-delay="60" style="padding:1.4rem">
+        <div class="sb-cell-head" style="margin-bottom:.9rem"><div><h4 style="font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--gold);letter-spacing:.1em;font-weight:400">SKILL OVERVIEW</h4></div></div>
+        <div class="sb-cell-radar">
+          <div class="radar-wrap"><svg class="radar-svg" viewBox="0 0 160 160" id="radarSvg"></svg><div class="radar-center-label"><strong>88<span style="font-size:.9rem">%</span></strong><span>avg. prof.</span></div></div>
+          <div class="radar-legend">
+            <div class="rl-item"><div class="rl-dot" style="background:#d4a96a"></div><span class="rl-name">Python</span><span class="rl-val">92%</span></div>
+            <div class="rl-item"><div class="rl-dot" style="background:#a78bfa"></div><span class="rl-name">C++ / DSA</span><span class="rl-val">88%</span></div>
+            <div class="rl-item"><div class="rl-dot" style="background:#2dd4bf"></div><span class="rl-name">Power BI</span><span class="rl-val">88%</span></div>
+            <div class="rl-item"><div class="rl-dot" style="background:#fb7185"></div><span class="rl-name">SQL</span><span class="rl-val">85%</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- C++ & DSA — NEW -->
+      <div class="sb-cell sb-c3 sb-cell-cpp reveal" data-delay="80">
+        <div class="sb-cell-head"><div class="sb-icon purple">C++</div><div><h4>C++ &amp; DSA</h4><p>Strong algorithmic foundations</p></div></div>
+        <div class="chip-row">
+          <span class="schip p">C++</span><span class="schip p">OOP</span><span class="schip p">Data Structures</span><span class="schip p">Algorithms</span><span class="schip n">STL</span><span class="schip n">Recursion</span><span class="schip n">DP</span>
+        </div>
+        <div class="cpp-bar-row">
+          <div class="cpp-mini-stat"><div class="cmb-num" data-to="200">0</div><div class="cmb-lbl">LeetCode +</div></div>
+          <div class="cpp-mini-stat"><div class="cmb-num">88%</div><div class="cmb-lbl">Proficiency</div></div>
+        </div>
+      </div>
+      <!-- Proficiency — NEW CIRCULAR DESIGN -->
+      <div class="sb-cell sb-c4 reveal" data-delay="40" id="profBars">
+        <div class="sb-cell-head" style="margin-bottom:1.4rem"><div class="sb-icon gold">⚡</div><div><h4>Proficiency Levels</h4><p>Self-assessed against real work</p></div></div>
+        <div class="prof-circles">
+          <div class="pcirc" data-pct="92" style="--pc:var(--gold)"><svg viewBox="0 0 80 80"><circle class="pcirc-bg" cx="40" cy="40" r="34"/><circle class="pcirc-fill" cx="40" cy="40" r="34"/></svg><span class="pcirc-val">92%</span><span class="pcirc-label">Python</span></div>
+          <div class="pcirc" data-pct="88" style="--pc:#a78bfa"><svg viewBox="0 0 80 80"><circle class="pcirc-bg" cx="40" cy="40" r="34"/><circle class="pcirc-fill" cx="40" cy="40" r="34"/></svg><span class="pcirc-val">88%</span><span class="pcirc-label">C++ / DSA</span></div>
+          <div class="pcirc" data-pct="88" style="--pc:var(--teal)"><svg viewBox="0 0 80 80"><circle class="pcirc-bg" cx="40" cy="40" r="34"/><circle class="pcirc-fill" cx="40" cy="40" r="34"/></svg><span class="pcirc-val">88%</span><span class="pcirc-label">Power BI</span></div>
+          <div class="pcirc" data-pct="85" style="--pc:#fb7185"><svg viewBox="0 0 80 80"><circle class="pcirc-bg" cx="40" cy="40" r="34"/><circle class="pcirc-fill" cx="40" cy="40" r="34"/></svg><span class="pcirc-val">85%</span><span class="pcirc-label">SQL</span></div>
+          <div class="pcirc" data-pct="82" style="--pc:var(--gold)"><svg viewBox="0 0 80 80"><circle class="pcirc-bg" cx="40" cy="40" r="34"/><circle class="pcirc-fill" cx="40" cy="40" r="34"/></svg><span class="pcirc-val">82%</span><span class="pcirc-label">Django</span></div>
+          <div class="pcirc" data-pct="75" style="--pc:#60a5fa"><svg viewBox="0 0 80 80"><circle class="pcirc-bg" cx="40" cy="40" r="34"/><circle class="pcirc-fill" cx="40" cy="40" r="34"/></svg><span class="pcirc-val">75%</span><span class="pcirc-label">ML</span></div>
+        </div>
+      </div>
+      <!-- Power BI -->
+      <div class="sb-cell sb-c5 reveal" data-delay="80">
+        <div class="sb-cell-head"><div class="sb-icon gold">BI</div><div><h4>Dashboards &amp; BI</h4><p>Insights people can actually use</p></div></div>
+        <div class="chip-row"><span class="schip g">Power BI</span><span class="schip n">DAX</span><span class="schip t">Data Modeling</span><span class="schip g">Power Query</span><span class="schip n">KPI Design</span><span class="schip p">Excel</span></div>
+      </div>
+      <!-- Web Dev -->
+      <div class="sb-cell sb-c6 reveal" data-delay="60">
+        <div class="sb-cell-head"><div class="sb-icon teal">WB</div><div><h4>Web Development</h4><p>From prototype to working product</p></div></div>
+        <div class="chip-row"><span class="schip g">Django</span><span class="schip t">Flask</span><span class="schip n">HTML/CSS</span><span class="schip n">Bootstrap</span><span class="schip g">SQLite</span><span class="schip t">Git</span><span class="schip p">REST APIs</span></div>
+      </div>
+      <!-- Tools -->
+      <div class="sb-cell sb-c3 reveal" data-delay="90">
+        <div class="sb-cell-head" style="margin-bottom:1rem"><div class="sb-icon teal">⚙️</div><div><h4>Tools &amp; OS</h4><p>Daily workflow</p></div></div>
+        <div class="tools-list">
+          <div class="tool-row"><div class="tool-icon g">🐙</div> GitHub</div>
+          <div class="tool-row"><div class="tool-icon t">📓</div> Jupyter Lab</div>
+          <div class="tool-row"><div class="tool-icon g">🛢️</div> VS Code</div>
+          <div class="tool-row"><div class="tool-icon p">🪟</div> Windows / Linux</div>
+          <div class="tool-row"><div class="tool-icon t">🔍</div> Postman</div>
+        </div>
+      </div>
+      <!-- Learning -->
+      <div class="sb-cell sb-c3 reveal" data-delay="100">
+        <div class="sb-cell-head" style="margin-bottom:1rem"><div class="sb-icon purple">🌱</div><div><h4>Currently Learning</h4></div></div>
+        <div class="learning-list">
+          <div class="learn-item"><div class="learn-dot"></div><span class="learn-text">Advanced ML algorithms</span><span class="learn-badge">Active</span></div>
+          <div class="learn-item"><div class="learn-dot"></div><span class="learn-text">FastAPI + async Python</span><span class="learn-badge">Active</span></div>
+          <div class="learn-item"><div class="learn-dot"></div><span class="learn-text">Docker &amp; deployment</span><span class="learn-badge">Next</span></div>
+          <div class="learn-item"><div class="learn-dot"></div><span class="learn-text">Cloud (Azure)</span><span class="learn-badge">Planned</span></div>
+        </div>
+      </div>
+      <!-- Statement -->
+      <div class="sb-cell sb-cell-statement sb-c4 reveal" data-delay="120">
+        <span class="sb-deco">"</span>
+        <p class="statement-quote">"I'm strongest when the work needs both technical depth and clean presentation. Data is only as useful as the story it tells."</p>
+        <span class="statement-by">— Priyam Tiwari · Approach to every project</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">03 — Selected Work</div>
+    <h2 class="section-title reveal">Projects I've <em>Built</em></h2>
+    <!-- Featured AQI -->
+    <div class="proj-hero-card reveal">
+      <div class="phc-img phc-embed-wrap">
+        <iframe title="AQI Dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiMTI2ZTg3MGQtZTUzYy00NDI2LWI0N2YtNDY4ZTc0ZGJkYmU1IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="phc-overlay"><a href="https://app.powerbi.com/view?r=eyJrIjoiMTI2ZTg3MGQtZTUzYy00NDI2LWI0N2YtNDY4ZTc0ZGJkYmU1IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" class="phc-open">Open Dashboard ↗</a></div>
+        <div class="phc-badge">Featured</div><div class="phc-num">01</div>
+      </div>
+      <div class="phc-body">
+        <div class="phc-year">2024</div><div class="phc-cat">Power BI · Python · Data Analytics</div>
+        <h3 class="phc-title">AQI Analysis<br>of India</h3>
+        <p>Interactive Power BI dashboard tracking India's air quality. Cleaned raw government data with Python, applied DAX measures, told a clear story about pollution patterns.</p>
+        <div class="phc-tags"><span>Power BI</span><span>Python</span><span>DAX</span><span>Data Cleaning</span><span>Pandas</span></div>
+        <div class="phc-links"><a href="https://app.powerbi.com/view?r=eyJrIjoiMTI2ZTg3MGQtZTUzYy00NDI2LWI0N2YtNDY4ZTc0ZGJkYmU1IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-sm btn-accent">Live Demo ↗</a></div>
+      </div>
+    </div>
+
+    <div class="proj-pair">
+      <div class="proj-card reveal">
+        <div class="pcard-img"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=700&q=85&fit=crop" alt="Crime"/><div class="pcard-overlay"><span class="pcard-n">02</span></div></div>
+        <div class="pcard-body">
+          <div class="pcard-meta">Python · Seaborn · 2024</div><h3>Crime Data Analysis</h3>
+          <p>Analyzed a large crime dataset. Found patterns by time of day, location and crime type. Deployed on Streamlit.</p>
+          <div class="pcard-tags"><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span><span>Jupyter</span></div>
+          <a href="https://crimeincident2024-eda-kuq33jmf28wqj6mh3afd3w.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-sm btn-accent">Live Project →</a>
+        </div>
+      </div>
+      <div class="proj-card proj-card-featured reveal" data-delay="80">
+        <div class="pcard-img"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=700&q=85&fit=crop" alt="Movie"/><div class="pcard-overlay"><span class="pcard-n">03</span></div><div class="pcard-badge">Live on Render</div></div>
+        <div class="pcard-body">
+          <div class="pcard-meta">Python · ML · Flask · 2023</div><h3>Movie Recommender System</h3>
+          <p>Content-based recommendation engine suggesting similar films from movie metadata and cosine similarity.</p>
+          <div class="pcard-tags"><span>Scikit-learn</span><span>Flask</span><span>Cosine Similarity</span></div>
+          <div class="pcard-highlights"><span>Fast title-based suggestions</span><span>Deployed web UI</span></div>
+          <div class="plink-row"><a href="https://movie-recommender-system-cpbv.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-sm btn-accent">Launch App ↗</a></div>
+        </div>
+      </div>
+      <div class="proj-card reveal" data-delay="120">
+        <div class="pcard-img" onclick="window.open('https://1drv.ms/x/c/ee1021a8f6196677/IQCyssahKo4LT5cSc4PbkeEaAY8kg_FjQf0aKVEdy5PKc48?e=8hiwrT', '_blank')" style="cursor:pointer">
+          <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=700&q=85&fit=crop" alt="E-commerce Sales Analysis"/>
+          <div class="pcard-overlay"><span class="pcard-n">04</span></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-meta">Excel · Data Analysis · 2024</div><h3>E-commerce Sales Analysis</h3>
+          <p>Analyzed e-commerce sales data using Excel. Created pivot tables, charts, and a dashboard to track KPIs and sales trends.</p>
+          <div class="pcard-tags"><span>Excel</span><span>Pivot Tables</span><span>Dashboards</span><span>Data Viz</span></div>
+          <a href="https://1drv.ms/x/c/ee1021a8f6196677/IQCyssahKo4LT5cSc4PbkeEaAY8kg_FjQf0aKVEdy5PKc48?e=8hiwrT" target="_blank" rel="noopener noreferrer" class="btn-sm btn-accent">Live Dashboard ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-wide reveal">
+      <div class="pw-img"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=85&fit=crop" alt="Course"/><div class="pw-n">05</div></div>
+      <div class="pw-body">
+        <div class="pw-year">2023</div><div class="pw-cat">Django · Full Stack · Web App</div>
+        <h3>Course Management System</h3>
+        <p>Full Django web application — user login, enrollment system, progress tracking and complete admin panel.</p>
+        <div class="pw-tags"><span>Django</span><span>Python</span><span>SQLite</span><span>Bootstrap</span></div>
+        <a href="https://github.com/1priyam/online_course_managment_system" target="_blank" rel="noopener noreferrer" class="btn-sm">View Code ↗</a>
+      </div>
+    </div>
+
+    <!-- Dynamic Memory Management — NEW -->
+    <div class="proj-wide pw-cpp reveal" data-delay="60">
+      <div class="pw-img" onclick="window.open('https://dynamic-memory-management-visualizer-tool-fsvfphbkmvvwpbgcntcu.streamlit.app/', '_blank')" style="cursor:pointer">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=85&fit=crop" alt="Memory Simulator"/>
+        <div class="pw-n">06</div>
+      </div>
+      <div class="pw-body">
+        <div class="pw-year">2024</div><div class="pw-cat">C++ · OS Concepts · Simulation</div>
+        <h3>Dynamic Memory Management Simulator</h3>
+        <p>A Dynamic Memory Management Visualizer that simulates how an operating system allocates and deallocates memory using algorithms like First Fit and Best Fit. Demonstrates fragmentation, compaction and allocation strategies interactively.</p>
+        <div class="pw-tags"><span>C++</span><span>OS Concepts</span><span>First Fit</span><span>Best Fit</span><span>Simulation</span></div>
+        <div class="plink-row">
+          <a href="https://dynamic-memory-management-visualizer-tool-fsvfphbkmvvwpbgcntcu.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-sm btn-accent">Live Simulator ↗</a>
+          <a href="https://github.com/1priyam" target="_blank" rel="noopener noreferrer" class="btn-sm">View Code ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-more-wrap reveal"><a href="https://github.com/1priyam" target="_blank" rel="noopener noreferrer" class="btn-outline">See All Projects on GitHub →</a></div>
+  </div>
+</section>
+
+<!-- TIMELINE — HORIZONTAL with photo galleries on hover -->
+<section id="experience" class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label reveal">04 — Journey</div>
+    <h2 class="section-title reveal">My <em>Timeline</em></h2>
+  </div>
+  <div class="tl-outer reveal" data-delay="60">
+    <div class="tl-track-wrap" id="tlTrack">
+      <div class="tl-track" id="tlInner">
+        <div class="tl-rail"></div>
+
+        <!-- Node 1: Sem 1 — College Start -->
+        <div class="tl-node" style="--tc:#60a5fa">
+          <div class="tn-card" data-photos='["images/IMG_20230818_183228.jpg","images/IMG_20230915_170755.jpg","images/IMG_20231123_191827.jpg"]'>
+            <span class="tn-emoji">🎓</span>
+            <span class="tn-cat cat-edu">Education</span>
+            <h4>Started B.Tech CSE</h4>
+            <p>Sem 1 — enrolled in CSE. Started with C++ fundamentals, OOP basics and first exposure to algorithms.</p>
+            <div class="tn-photo-preview">
+              <div class="tpp-thumb" style="background-image:url('images/IMG_20230818_183228.jpg')"></div>
+              <div class="tpp-thumb" style="background-image:url('images/IMG_20230915_170755.jpg')"></div>
+              <div class="tpp-thumb tpp-more"><span>+1</span></div>
+              <span class="tpp-count">3 photos · hover to view</span>
+            </div>
+          </div>
+          <div class="tn-connector"><div class="tn-line"></div><div class="tn-dot"></div><div class="tn-line"></div></div>
+          <div class="tn-date">2023 · Sem 1</div>
+        </div>
+
+        <!-- Node 3: PEL Event Sem 2 — 5 photos -->
+        <div class="tl-node" style="--tc:#d4a96a">
+          <div class="tn-card" data-photos='["pel event images/1709668540758.jpeg","pel event images/1709668540903.jpeg","pel event images/1709668542065.jpeg"]'>
+            <span class="tn-emoji">🥈</span>
+            <span class="tn-cat cat-ach">Achievement</span>
+            <h4>PEL Communication Event</h4>
+            <p>Achieved 2nd position in PEL English Communication Competition. Sharpened public speaking and debate skills.</p>
+            <div class="tn-photo-preview">
+              <div class="tpp-thumb" style="background-image:url('pel event images/1709668540758.jpeg')"></div>
+              <div class="tpp-thumb" style="background-image:url('pel event images/1709668540903.jpeg')"></div>
+              <div class="tpp-thumb tpp-more"><span>+1</span></div>
+              <span class="tpp-count">3 photos · hover to view</span>
+            </div>
+          </div>
+          <div class="tn-connector"><div class="tn-line"></div><div class="tn-dot"></div><div class="tn-line"></div></div>
+          <div class="tn-date">2023 · Sem 2</div>
+        </div>
+
+        <!-- Node 4: Crime Data Analysis Sem 3 -->
+        <div class="tl-node" style="--tc:#2dd4bf">
+          <div class="tn-date">2024 · Sem 3</div>
+          <div class="tn-connector"><div class="tn-line"></div><div class="tn-dot"></div><div class="tn-line"></div></div>
+          <div class="tn-card" data-photos='["images/1744347514358.jpeg","images/1744347514385.jpeg"]'>
+            <span class="tn-emoji">🔍</span>
+            <span class="tn-cat cat-project">Project</span>
+            <h4>Crime Data Analysis</h4>
+            <p>Analyzed large crime dataset with Pandas &amp; Seaborn. Found patterns by time, location and type. Deployed on Streamlit.</p>
+            <div class="tn-photo-preview">
+              <div class="tpp-thumb" style="background-image:url('images/1744347514358.jpeg')"></div>
+              <div class="tpp-thumb" style="background-image:url('images/1744347514385.jpeg')"></div>
+              <span class="tpp-count">2 photos · hover to view</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Node 5: AQI Dashboard -->
+        <div class="tl-node" style="--tc:#f59e0b">
+          <div class="tn-card" data-photos='["images/Screenshot 2026-03-23 013139.png","images/Screenshot 2026-03-23 013035.png"]'>
+            <span class="tn-emoji">📊</span>
+            <span class="tn-cat cat-project">Project</span>
+            <h4>AQI Dashboard — Power BI</h4>
+            <p>Interactive Power BI dashboard tracking India's air quality. Raw gov data → clean story with DAX and Python.</p>
+            <div class="tn-photo-preview">
+              <div class="tpp-thumb" style="background-image:url('images/Screenshot 2026-03-23 013139.png')"></div>
+              <div class="tpp-thumb" style="background-image:url('images/Screenshot 2026-03-23 013035.png')"></div>
+              <span class="tpp-count">2 photos · hover to view</span>
+            </div>
+          </div>
+          <div class="tn-connector"><div class="tn-line"></div><div class="tn-dot"></div><div class="tn-line"></div></div>
+          <div class="tn-date">2024 · Sem 3</div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:.8rem;margin-top:.5rem">
+      <div class="tl-scroll-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+        Drag to scroll · Hover cards to see photos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </div>
+      <div class="tl-arrows">
+        <button class="tl-arr" id="tlPrev">←</button>
+        <button class="tl-arr" id="tlNext">→</button>
+      </div>
+      <div class="tl-dots" id="tlDots"></div>
+    </div>
+  </div>
+  <!-- Photo Lightbox -->
+  <div id="tlPhotoBox" class="tl-photo-box">
+    <div class="tpb-backdrop" id="tpbBackdrop"></div>
+    <div class="tpb-modal">
+      <button class="tpb-close" id="tpbClose">✕</button>
+      <button class="tpb-nav tpb-prev" id="tpbPrev">‹</button>
+      <div class="tpb-img-wrap"><img id="tpbImg" src="" alt="Timeline photo"/><div class="tpb-placeholder">📷 Place your photo here</div></div>
+      <button class="tpb-nav tpb-next" id="tpbNext">›</button>
+      <div class="tpb-footer">
+        <div class="tpb-dots" id="tpbDots"></div>
+        <div class="tpb-counter" id="tpbCounter"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES — with certificate images -->
+<section id="certificates" class="section">
+  <div class="section-inner">
+    <div class="certs-header">
+      <div class="certs-header-left">
+        <div class="section-label reveal">05 — Certifications</div>
+        <h2 class="section-title reveal">Courses &amp; <em>Credentials</em></h2>
+        <p class="certs-tagline reveal" data-delay="60">Click any card to preview the certificate image. Each backed by real project work.</p>
+      </div>
+      <div class="cert-nav-controls reveal" data-delay="80">
+        <button class="cert-arr" id="certPrev">←</button>
+        <button class="cert-arr" id="certNext">→</button>
+      </div>
+    </div>
+
+    <div class="cert-carousel-outer reveal" data-delay="100">
+      <div class="cert-track" id="certTrack">
+
+        <div class="cert-slide" data-idx="0" style="--cbar:#f59e0b;--cibg:rgba(245,158,11,.1);--ciborder:rgba(245,158,11,.22)" data-img="Certifactes/power bi Certificate (1).pdf" data-title="Power BI Workshop Certificate" data-issuer="Workshop · 2024" data-desc="Intensive Power BI workshop covering dashboard design, DAX formulas, data modeling and real-time reporting for business intelligence. Applied skills directly to the AQI India project.">
+          <div class="cert-bar"></div><div class="cert-bg-num">01</div>
+          <div class="cert-top"><div class="cert-icon-wrap">📊</div><span class="cert-yr-tag">2024</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">power bi Certificate (1).pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>Power BI Workshop</h4><span class="cert-issuer">Workshop · Official</span>
+          <div class="cert-skills"><span class="cert-skill-tag">Power BI</span><span class="cert-skill-tag">DAX</span><span class="cert-skill-tag">Data Viz</span></div>
+          <p class="cert-desc">Intensive workshop on Power BI — dashboard design, DAX and BI reporting.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+        <div class="cert-slide" data-idx="1" style="--cbar:#a78bfa;--cibg:rgba(167,139,250,.1);--ciborder:rgba(167,139,250,.22)" data-img="Certifactes/summer_training_certificate.pdf" data-title="Summer Training Certificate" data-issuer="Summer Training · 2023" data-desc="Summer training certificate covering C++, object oriented programming and core DSA concepts that shaped later problem solving and development work.">
+          <div class="cert-bar"></div><div class="cert-bg-num">02</div>
+          <div class="cert-top"><div class="cert-icon-wrap">💻</div><span class="cert-yr-tag">2023</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">summer_training_certificate.pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>Summer Training</h4><span class="cert-issuer">C++ · OOP · DSA</span>
+          <div class="cert-skills"><span class="cert-skill-tag">C++</span><span class="cert-skill-tag">OOP</span><span class="cert-skill-tag">DSA</span><span class="cert-skill-tag">Algorithms</span></div>
+          <p class="cert-desc">Summer training in C++, OOP concepts and Data Structures &amp; Algorithms.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+        <div class="cert-slide" data-idx="2" style="--cbar:#60a5fa;--cibg:rgba(96,165,250,.1);--ciborder:rgba(96,165,250,.22)" data-img="Certifactes/Cloud_Computing_NPTEL.pdf" data-title="Cloud Computing — NPTEL" data-issuer="NPTEL · 2025" data-desc="NPTEL certification in Cloud Computing covering cloud service models, virtualization, cloud security, distributed systems and deployment models.">
+          <div class="cert-bar"></div><div class="cert-bg-num">03</div>
+          <div class="cert-top"><div class="cert-icon-wrap">☁️</div><span class="cert-yr-tag">2024</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">Cloud_Computing_NPTEL.pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>Cloud Computing</h4><span class="cert-issuer">NPTEL · IIT</span>
+          <div class="cert-skills"><span class="cert-skill-tag">Cloud</span><span class="cert-skill-tag">IaaS/PaaS</span><span class="cert-skill-tag">Virtualization</span></div>
+          <p class="cert-desc">NPTEL cloud computing — service models, virtualization and distributed systems.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+        <div class="cert-slide" data-idx="3" style="--cbar:#34d399;--cibg:rgba(52,211,153,.1);--ciborder:rgba(52,211,153,.22)" data-img="Certifactes/DSA with c++.pdf" data-title="Data Structures & Algorithms with C++" data-issuer="DSA Certificate · 2025" data-desc="Certificate focused on data structures, algorithms and C++ implementation, covering arrays, linked lists, trees, graphs and dynamic programming fundamentals.">
+          <div class="cert-bar"></div><div class="cert-bg-num">04</div>
+          <div class="cert-top"><div class="cert-icon-wrap">🔗</div><span class="cert-yr-tag">2025</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">DSA with c++.pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>DSA with C++</h4><span class="cert-issuer">Algorithms · Problem Solving</span>
+          <div class="cert-skills"><span class="cert-skill-tag">Arrays</span><span class="cert-skill-tag">Trees</span><span class="cert-skill-tag">Graphs</span><span class="cert-skill-tag">DP</span></div>
+          <p class="cert-desc">Comprehensive DSA certification — arrays, trees, graphs and dynamic programming.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+        <div class="cert-slide" data-idx="4" style="--cbar:#fb7185;--cibg:rgba(251,113,133,.1);--ciborder:rgba(251,113,133,.22)" data-img="Certifactes/Object Oriented Programming C++.pdf" data-title="Object Oriented Programming C++" data-issuer="Programming Certificate · 2025" data-desc="Certificate focused on object oriented programming in C++, covering classes, inheritance, polymorphism, abstraction and structured software design fundamentals.">
+          <div class="cert-bar"></div><div class="cert-bg-num">05</div>
+          <div class="cert-top"><div class="cert-icon-wrap">🧱</div><span class="cert-yr-tag">2025</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">Object Oriented Programming C++.pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>Object Oriented Programming</h4><span class="cert-issuer">C++ · Core Concepts</span>
+          <div class="cert-skills"><span class="cert-skill-tag">Classes</span><span class="cert-skill-tag">Inheritance</span><span class="cert-skill-tag">Polymorphism</span></div>
+          <p class="cert-desc">C++ OOP certification covering classes, inheritance, abstraction and reusable design.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+        <div class="cert-slide" data-idx="5" style="--cbar:#c084fc;--cibg:rgba(192,132,252,.1);--ciborder:rgba(192,132,252,.22)" data-img="Certifactes/ai tools workshop certifcate.pdf" data-title="AI Tools Workshop Certificate" data-issuer="Workshop · 2025" data-desc="Workshop certificate covering modern AI tools, productivity workflows and applied prompt usage for building faster, smarter development processes.">
+          <div class="cert-bar"></div><div class="cert-bg-num">06</div>
+          <div class="cert-top"><div class="cert-icon-wrap">🤖</div><span class="cert-yr-tag">2025</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">ai tools workshop certifcate.pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>AI Tools Workshop</h4><span class="cert-issuer">Workshop · Applied AI</span>
+          <div class="cert-skills"><span class="cert-skill-tag">AI Tools</span><span class="cert-skill-tag">Prompts</span><span class="cert-skill-tag">Workflows</span></div>
+          <p class="cert-desc">Workshop on practical AI tools and prompt-driven productivity for developers.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+        <div class="cert-slide" data-idx="6" style="--cbar:#22c55e;--cibg:rgba(34,197,94,.1);--ciborder:rgba(34,197,94,.22)" data-img="Certifactes/Object Oriented Programming C++.pdf" data-title="C++ Programming Certificate" data-issuer="Programming Certificate · 2025" data-desc="Certificate for C++ programming concepts including object oriented design, classes, inheritance, polymorphism and structured problem solving.">
+          <div class="cert-bar"></div><div class="cert-bg-num">07</div>
+          <div class="cert-top"><div class="cert-icon-wrap">⌘</div><span class="cert-yr-tag">2025</span></div>
+          <div class="cert-img-preview"><div class="cip-file-tag">PDF</div><div class="cip-name">Object Oriented Programming C++.pdf</div><div class="cip-overlay"><span>🔍 View Cert</span></div></div>
+          <h4>C++ Programming</h4><span class="cert-issuer">Programming Fundamentals</span>
+          <div class="cert-skills"><span class="cert-skill-tag">C++</span><span class="cert-skill-tag">OOP</span><span class="cert-skill-tag">Logic</span></div>
+          <p class="cert-desc">Foundation certificate in C++ programming, covering object oriented concepts and core problem solving.</p>
+          <div class="cert-footer"><span class="cert-verified">Verified</span><span class="cert-view-btn">View Image ↗</span></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cert-dots" id="certDots"></div>
+
+    <!-- Detail Panel with cert image -->
+    <div class="cert-detail-panel reveal" data-delay="120" id="certDetailPanel">
+      <div class="cdp-cert-img-wrap" id="cdpCertImgWrap">
+        <iframe id="cdpCertImg" src="Certifactes/power bi Certificate (1).pdf" title="Certificate preview"></iframe>
+        <img id="cdpCertImage" src="" alt="Certificate preview" style="display:none">
+        <div class="cdp-img-fallback">📜<br>Certificate Preview<br><small>If the PDF cannot be embedded,<br>use the full screen button.</small></div>
+        <button class="cdp-fullscreen-btn" id="cdpFullscreenBtn">⛶ Full Screen</button>
+      </div>
+      <div class="cdp-body">
+        <div class="cdp-meta" id="cdpMeta">Workshop · 2024</div>
+        <h3 id="cdpTitle">Power BI Workshop</h3>
+        <p id="cdpDesc">Intensive Power BI workshop covering dashboard design, DAX formulas, data modeling and real-time reporting.</p>
+      </div>
+    </div>
+
+    <!-- Certificate Fullscreen Lightbox -->
+    <div id="certLightbox" class="cert-lightbox">
+      <div class="clb-bg" id="clbBg"></div>
+      <div class="clb-box">
+        <button class="clb-close" id="clbClose">✕</button>
+        <iframe id="clbImg" src="Certifactes/power bi Certificate (1).pdf" title="Certificate full screen preview"></iframe>
+        <img id="clbImage" src="" alt="Certificate view" style="display:none">
+        <div class="clb-title" id="clbTitle"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">06 — Highlights</div>
+    <h2 class="section-title reveal">Things I'm <em>Proud Of</em></h2>
+
+    <!-- NGO Wide card with PPT -->
+    <div class="ach-wide-card reveal">
+      <div class="awc-left">
+        <div class="awc-badge-chip">🤝 NGO &amp; Community</div>
+        <h3>NGO &amp; Community Involvement</h3>
+        <p>Worked with an NGO to serve people in need across <strong>education, food, and shelter programs</strong>. Actively participated in community outreach initiatives to support social welfare and create meaningful change.</p>
+        <div class="awc-stats">
+          <div class="awc-stat"><span class="ach-ctr" data-to="50">0</span><span class="awc-suf">h+</span><span class="awc-lbl">Volunteer Hours</span></div>
+          <div class="awc-stat"><span class="ach-ctr">3</span><span class="awc-suf">+</span><span class="awc-lbl">Programs</span></div>
+          <div class="awc-stat"><span class="ach-ctr">100</span><span class="awc-suf">+</span><span class="awc-lbl">People Helped</span></div>
+        </div>
+        <div class="awc-tags"><span>Education</span><span>Food Programs</span><span>Shelter</span><span>Outreach</span></div>
+      </div>
+      <div class="awc-right">
+        <div class="awc-ppt-label">📊 Impact Report — PDF</div>
+        <div class="awc-ppt-frame">
+          <iframe src="COMMUNITY-DEVELOPMENT-PROJECT-PRIYAM.pdf" title="NGO Impact Report" loading="lazy"></iframe>
+          <button class="cdp-fullscreen-btn" onclick="openCertLB('COMMUNITY-DEVELOPMENT-PROJECT-PRIYAM.pdf','NGO & Community Impact')">⛶ Full Screen</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ach-grid">
+      <!-- PEL -->
+      <div class="ach-card reveal">
+        <div class="ach-glow"></div>
+        <div class="ach-top"><span class="ach-emoji">🥈</span><span class="ach-num">#2</span></div>
+        <h4>PEL Communication Competition</h4>
+        <p>Achieved Second Position in the PEL English Communication Competition. Sharpened public speaking, debate and presentation.</p>
+        <div class="ach-cert-preview">
+          <div class="acp-img" style="background-image:url('pel event images/1709668540903.jpeg')" onclick="openCertLB('pel event images/1709668540903.jpeg','PEL Communication Competition')">
+            <div class="acp-overlay">🔍 View Certificate</div>
+          </div>
+        </div>
+        <div class="ach-tag">Inter-College · Sem 2</div>
+      </div>
+      <!-- InnovateX -->
+      <div class="ach-card reveal" data-delay="60">
+        <div class="ach-glow"></div>
+        <div class="ach-top"><span class="ach-emoji">🚀</span><div class="ach-badge-pill organizer">Organizer</div></div>
+        <h4>InnovateX Hackathon</h4>
+        <p>Organized the InnovateX hackathon in Sem 2 as part of college club — led event management, team coordination and judging panel.</p>
+        <div class="ach-cert-preview">
+          <div class="acp-img" style="background-image:url('images/Screenshot 2026-03-23 020723.png')" onclick="openCertLB('images/Screenshot 2026-03-23 020723.png','InnovateX Hackathon')">
+            <div class="acp-overlay">🔍 View Certificate</div>
+          </div>
+        </div>
+        <div class="ach-tag">Sem 2 · Club · Organizer</div>
+      </div>
+      <!-- Code Off Duty with certificate -->
+      <div class="ach-card reveal" data-delay="120">
+        <div class="ach-glow"></div>
+        <div class="ach-top"><span class="ach-emoji">💻</span><div class="ach-badge-pill participant">Participant</div></div>
+        <h4>Code Off Duty Hackathon</h4>
+        <p>Participated in Code Off Duty hackathon in Sem 1 — first taste of competitive coding and hackathon culture.</p>
+        <div class="ach-cert-preview">
+          <div class="acp-img" style="background-image:url('images/Screenshot 2026-03-23 015314.png')" onclick="openCertLB('images/Screenshot 2026-03-23 015314.png','Code Off Duty Hackathon')">
+            <div class="acp-overlay">🔍 View Certificate</div>
+          </div>
+        </div>
+        <div class="ach-tag">Sem 1 · Hackathon</div>
+      </div>
+      <!-- LeetCode -->
+      <div class="ach-card reveal" data-delay="180">
+        <div class="ach-glow"></div>
+        <div class="ach-top"><span class="ach-emoji">⚡</span><span class="ach-num" data-to="50">0</span><span class="ach-suf"> Days Badge</span></div>
+        <h4>LeetCode Consistency</h4>
+        <p>Earned the 50 Days Badge for consistent daily coding. Working through dynamic programming, graphs and advanced algorithms.</p>
+        <div class="ach-cert-preview">
+          <div class="acp-img" style="background-image:url('images/50daysbadge.png')" onclick="openCertLB('images/50daysbadge.png','LeetCode 50 Days Badge')">
+            <div class="acp-overlay">🔍 View Stats</div>
+          </div>
+        </div>
+        <div class="ach-bar"><div class="ach-bar-fill" style="width:72%"></div></div>
+        <span class="ach-note">72% easy · 25% medium · 3% hard</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="qb-inner">
+    <span class="qb-mark">"</span>
+    <blockquote>Data is not just numbers — it's a language. I'm learning to speak it fluently.</blockquote>
+    <cite>— Priyam Tiwari</cite>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-inner">
+    <div class="section-label">07 — Get In Touch</div>
+    <div class="contact-layout">
+      <div class="contact-left">
+        <h2 class="contact-heading reveal">Let's <em>build</em><br>something<br><em>great</em> together</h2>
+        <p class="contact-sub reveal" data-delay="60">Open to internships, freelance collaborations, or just a good conversation about data and code.</p>
+        <div class="contact-cards">
+          <a href="mailto:tpriyam60@gmail.com" class="ccard reveal"><div class="ccard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="ccard-text"><span class="ccard-label">Email</span><span class="ccard-val">tpriyam60@gmail.com</span></div><span class="ccard-arr">↗</span></a>
+          <a href="https://www.linkedin.com/in/priyam-tiwari-0ab62b28a/" target="_blank" rel="noopener noreferrer" class="ccard reveal" data-delay="60"><div class="ccard-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></div><div class="ccard-text"><span class="ccard-label">LinkedIn</span><span class="ccard-val">Connect with me</span></div><span class="ccard-arr">↗</span></a>
+          <a href="https://github.com/1priyam" target="_blank" rel="noopener noreferrer" class="ccard reveal" data-delay="120"><div class="ccard-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg></div><div class="ccard-text"><span class="ccard-label">GitHub</span><span class="ccard-val">@1priyam</span></div><span class="ccard-arr">↗</span></a>
+        </div>
+      </div>
+      <div class="contact-right reveal" data-delay="80">
+        <form id="contactForm" novalidate data-api="/api/contact">
+          <div class="cf-grid">
+            <div class="cf-field"><label>Your Name <span class="req">*</span></label><input type="text" name="name" id="cf-name" placeholder="John Doe" required/><span class="cf-err"></span></div>
+            <div class="cf-field"><label>Email <span class="req">*</span></label><input type="email" name="email" id="cf-email" placeholder="john@example.com" required/><span class="cf-err"></span></div>
+          </div>
+          <div class="cf-field cf-hp"><label>Website</label><input type="text" name="website" tabindex="-1" autocomplete="off"/></div>
+          <div class="cf-field"><label>Subject</label><input type="text" name="subject" placeholder="Internship opportunity / Collaboration..."/></div>
+          <div class="cf-field"><label>Message <span class="req">*</span></label><textarea name="message" id="cf-msg" rows="6" placeholder="Tell me what you're building or what you need help with..." required></textarea><span class="cf-err"></span></div>
+          <button type="submit" id="cfSubmit" class="btn-primary btn-full"><span id="cfBtnText">Send Message</span><span class="btn-arrow" id="cfArrow">→</span></button>
+          <div class="cf-feedback" id="cfFeedback"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="ft-brand"><span class="ft-name">Priyam<span class="ft-dot">.</span></span><span class="ft-sub">Data Analyst &amp; Developer</span></div>
+      <nav class="ft-nav"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Work</a><a href="#certificates">Certs</a><a href="#contact">Contact</a></nav>
+      <div class="ft-socials"><a href="https://github.com/1priyam" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/priyam-tiwari-0ab62b28a/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:tpriyam60@gmail.com">Email</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Priyam Tiwari · B.Tech CSE 3rd Year</span><span>Designed &amp; built with ❤️ and curiosity</span></div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
